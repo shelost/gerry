@@ -44,6 +44,42 @@ function applyGrid(){
         n = rows.value * cols.value
         addDist()
 
+        // Horizontal
+        if (Grid.length == districts){
+
+            var horizontal = []
+            
+            for (let i=0;i<districts;i++){
+
+                horizontal.push([])
+
+                for (let j=0;j<Grid[0].length;j++){
+
+                    horizontal[i].push([Grid[i][j][0], i, 0])
+                }
+            }
+
+            Iterations.push(horizontal)
+        }
+
+        // Vertical
+        if (Grid[0].length == districts){
+
+            var vertical = []
+
+            for (let i=0;i<Grid.length;i++){
+
+                vertical.push([])
+
+                for (let j=0;j<Grid[0].length;j++){
+
+                    vertical[i].push([Grid[i][j][0], j, 0])
+                }
+            }
+
+            Iterations.push(vertical)
+        }
+
     }else{
 
         alert('The system is currently running. Please cancel it before modifying the grid.')
@@ -56,9 +92,7 @@ applyGrid()
 
 var r = edges[Math.floor(Math.random()*edges.length)]
 
-setTimeout(()=>{
-    c = [r[0], r[1]]
-},100)
+c = [0,0]
 
 var group = 0
 var districts = 5
@@ -76,8 +110,6 @@ var attempts = 0
 var Iterations = []
 
 var Trials = 10
-
-
 
 function Clear(){
 
@@ -102,11 +134,25 @@ function Clear(){
     restart = true
     List = [[]]
 
-    //c = [ Math.random()>0.5? 0: Grid.length -1 , Math.random()>0.5? 0: Grid[0].length -1 ]
-    c = [ Math.floor(Math.random()*Grid.length), Math.floor(Math.random()*Grid[0].length) ]
+    edges = []
+
+    for (let i=0;i<Grid.length;i++){
+        for (let j=0;j<Grid[0].length;j++){
+            if (i == 0 || i == Grid.length-1){
+                edges.push([i,j])
+            }
+            if (j == 0 || j == Grid[0].length-1){
+                edges.push([i,j])
+            }
+        }
+    }
+
+    r = edges[Math.floor(Math.random()*edges.length)]
+
+        c = [r[0], r[1]]
+
 
     console.log('try again')
-
 }
 
 function checkGrouped(){
@@ -391,41 +437,7 @@ function Initiate(){
 var Box = Id('box')
 
 
-// Horizontal
-if (Grid.length == districts){
 
-    var horizontal = []
-    
-    for (let i=0;i<districts;i++){
-
-        horizontal.push([])
-
-        for (let j=0;j<Grid[0].length;j++){
-
-            horizontal[i].push([Grid[i][j][0], i, 0])
-        }
-    }
-
-    Iterations.push(horizontal)
-}
-
-// Vertical
-if (Grid[0].length == districts){
-
-    var vertical = []
-
-    for (let i=0;i<Grid.length;i++){
-
-        vertical.push([])
-
-        for (let j=0;j<Grid[0].length;j++){
-
-            vertical[i].push([Grid[i][j][0], j, 0])
-        }
-    }
-
-    Iterations.push(vertical)
-}
 
 var Results=  []
 

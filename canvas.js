@@ -9,12 +9,16 @@ const apply = Id('apply')
 var hovering = [null, null]
 
 var Colors  = [
-    '#c2c2c2',
-    '#8a8a8a',
-    '#545454',
-    '#2b2b2b',
-    '#dfdfdf',
-    '#464646',
+    'rgba(0,0,0,0.3)',
+    'rgba(0,0,0,0.5)',
+    'rgba(0,0,0,0.7)',
+    'rgba(0,0,0,0.2)',
+    'rgba(0,0,0,0.4)',
+    'rgba(0,0,0,0.6)',
+    'rgba(0,0,0,0.9)',
+    'rgba(0,0,0,0.1)',
+    'rgba(0,0,0,1)',
+    'rgba(0,0,0,0.4)',
 ]
 
 const CanvasLoop = () => {
