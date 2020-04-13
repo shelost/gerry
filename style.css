@@ -1,0 +1,240 @@
+body {
+  font-family: Avenir, sans-serif;
+  overflow: scroll;
+}
+
+* {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.header {
+  height: 5vw;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 1vw;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+button {
+  color: white;
+  height: 4vw;
+  outline: none;
+  font-size: 1vw;
+  padding: 0.5vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  border-radius: 3vw;
+  margin: 0.5vw;
+  border: none;
+}
+
+button:hover {
+  padding-left: 1.7vw;
+  padding-right: 1.7vw;
+  height: 3.5vw;
+  margin: 0.8vw;
+}
+
+.result {
+  margin: 0;
+  margin: 1vw;
+  font-size: 1vw;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 1vw;
+  border-radius: 0.5vw;
+}
+
+#box {
+  height: 35vw;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: scroll;
+}
+
+.box-box {
+  width: 20vw;
+  height: 40vw;
+}
+
+.box-title {
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 5vw;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 5vw;
+  font-size: 1.5vw;
+  font-weight: 100;
+  padding-left: 1vw;
+}
+
+#log {
+  background-color: black;
+  overflow: scroll;
+  height: 35vw;
+}
+
+.log-box {
+  width: 40vw;
+  height: 40vw;
+}
+
+.log-title {
+  background-color: black;
+  height: 5vw;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 5vw;
+  font-size: 1.5vw;
+  font-weight: 100;
+  padding-left: 1vw;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2vw;
+}
+
+#canvas {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.logitem {
+  color: white;
+  margin: 1vw;
+  font-size: 1vw;
+}
+
+#title {
+  color: white;
+  width: 15vw;
+  border-radius: 3vw;
+  font-size: 2vw;
+  line-height: 5vw;
+  height: 5vw;
+  margin: 0;
+  text-align: center;
+  font-weight: 200;
+}
+
+select {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 1vw;
+  height: 3.5vw;
+  border-radius: 0.5vw;
+  border: none;
+  font-size: 1.5vw;
+  text-align: center;
+  margin: 1vw;
+}
+
+select:focus {
+  outline: none;
+}
+
+select:-ms-expand {
+  display: none;
+}
+
+select:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  height: 3vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1vw;
+  padding-left: 1.5vw;
+  padding-right: 0.5vw;
+  border-radius: 3vw;
+  font-size: 1.5vw;
+}
+
+.grid p {
+  color: white;
+}
+
+.grid button {
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 3.5vw;
+}
+
+.grid button:hover {
+  height: 3vw;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  height: 3vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1vw;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  border-radius: 3vw;
+  font-size: 1.5vw;
+}
+
+.btns p {
+  color: white;
+}
+
+.btns button {
+  height: 3.5vw;
+}
+
+.btns button:hover {
+  height: 3vw;
+}
+
+.red {
+  background-color: red;
+}
+
+.red:hover {
+  background-color: darkred;
+}
+
+.blue {
+  background-color: #0078FF;
+}
+
+.blue:hover {
+  background-color: navy;
+}
+/*# sourceMappingURL=style.css.map */

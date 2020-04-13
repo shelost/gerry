@@ -1,0 +1,226 @@
+$blue: #0078FF;
+
+body{
+    font-family: Avenir, sans-serif;
+    overflow: scroll;
+        
+}
+*{
+    transition: all 0.2s ease;
+}
+
+.header{
+
+    height: 5vw;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1vw;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+
+    color: white;
+    height: 4vw;
+    outline: none;
+    font-size: 1vw;
+    padding: 0.5vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border-radius: 3vw;
+    margin: 0.5vw;
+    border: none;
+
+    &:hover{
+
+
+        padding-left: 1.7vw;
+        padding-right: 1.7vw;
+        height: 3.5vw;
+        margin: 0.8vw;
+
+    }
+}
+
+
+.result{
+    margin: 0;
+    margin: 1vw;
+    font-size: 1vw;
+    background-color: rgba(0,0,0,0.1);
+    padding: 1vw;
+    border-radius: 0.5vw;
+}
+
+#box{
+ 
+    height: 35vw;
+    background-color: rgba(0,0,0,0.2);
+    overflow: scroll;
+}
+
+.box-box{
+    width: 20vw;
+    height: 40vw;
+}
+.box-title{
+    background-color: rgba(0,0,0,0.2);
+    height: 5vw;
+    margin: 0;
+    color: rgba(0,0,0,0.8);
+    line-height: 5vw;
+    font-size: 1.5vw;
+    font-weight: 100;
+    padding-left: 1vw;
+}
+
+#log{
+    background-color: black;
+    overflow: scroll;
+    height: 35vw;
+}
+
+.log-box{
+    width: 40vw;
+    height: 40vw;
+}
+
+.log-title{
+    background-color: rgba(0,0,0,1);
+    height: 5vw;
+    margin: 0;
+    color: rgba(255,255,255,0.7);
+    line-height: 5vw;
+    font-size: 1.5vw;
+    font-weight: 100;
+    padding-left: 1vw;
+}
+
+.container{
+    display: flex;
+    margin: 2vw;
+}
+
+#canvas{
+    flex: 1;
+}
+
+.logitem{
+    color: white;
+    margin: 1vw;
+    font-size: 1vw;
+}
+
+#title{
+    color: white;
+    width: 15vw;
+    border-radius: 3vw;
+    font-size: 2vw;
+    line-height:5vw;
+    height:5vw;
+    margin: 0;
+    text-align: center;
+    font-weight: 200;
+}
+
+select{
+
+    background-color: rgba(255,255,255,0);
+    color: white;
+    appearance: none;
+    padding: 1vw;
+    height: 3.5vw;
+    border-radius: 0.5vw;
+
+    border: none;
+
+    font-size: 1.5vw;
+    text-align: center;
+    margin: 1vw;
+
+    &:focus{
+
+        outline: none;
+    }
+
+    &:-ms-expand{
+
+        display: none;
+
+    }  
+
+    &:hover{
+
+        background-color: rgba(255,255,255,0.2);
+    }
+
+}
+
+.grid{
+    display: flex;
+    background-color: black;
+    height: 3vw;
+    align-items: center;
+
+    padding: 1vw;
+    padding-left: 1.5vw;
+    padding-right: 0.5vw;
+    border-radius: 3vw;
+    font-size: 1.5vw;
+    p{
+        color: white;
+        
+    }
+
+    button{
+        background-color: rgba(255,255,255,0.3);
+        height: 3.5vw;
+        &:hover{
+            height: 3vw;
+            background-color: rgba(255,255,255,0.4);
+        }
+    }
+}
+
+.btns{
+    display: flex;
+    background-color: black;
+    height: 3vw;
+    align-items: center;
+    padding: 1vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    border-radius: 3vw;
+    font-size: 1.5vw;
+    p{
+        color: white;
+        
+    }
+
+    button{
+        height: 3.5vw;
+        &:hover{
+            height: 3vw;
+
+        }
+    }
+}
+
+.red{
+    background-color: red;
+    &:hover{
+        background-color: darkred;
+    }
+}
+.blue{
+    background-color: $blue;
+    &:hover{
+        background-color: navy;
+    }
+}

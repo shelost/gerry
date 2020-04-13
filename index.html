@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gerry</title>
+
+    <link href = 'style.css' rel = 'stylesheet'>
+</head>
+<body>
+
+    <div class = 'main'>
+
+    <div class = 'header'>
+
+        <h1 id = 'title' class = 'red'> Project Gerry </h1>
+
+        <div class = 'grid'>
+
+            <p> Grid: </p>
+
+            <select id = 'cols'>
+                <option value = '4'> 4 </option>
+                <option value = '5' selected> 5 </option>
+                <option value = '6'> 6 </option>
+                <option value = '7'> 7 </option>
+                <option value = '8'> 8 </option>
+                <option value = '9'> 9 </option>
+            </select>
+            
+            <p> x </p>
+
+            <select id = 'rows'>
+                <option value = '4'> 4 </option>
+                <option value = '5' selected> 5 </option>
+                <option value = '6'> 6 </option>
+                <option value = '7'> 7 </option>
+                <option value = '8'> 8 </option>
+                <option value = '9'> 9 </option>
+            </select>
+
+            <button id = 'apply'> Apply </button>
+
+        </div>
+
+        <div class = 'grid'>
+            <p> Districts: </p>
+            <select id = 'district'>
+            </select>
+        </div>
+
+         <div class = 'grid'>
+            <p> Threshold: </p>
+            <select id = 'threshold'>
+                    <option value = '5'> 4 </option>
+                    <option value = '7' > 7 </option>
+                    <option value = '10' selected> 10 </option>
+                    <option value = '13'> 13 </option>
+            </select>
+        </div>
+
+        <div class = 'grid red' id = 'favorbox'>
+                <p> Favor: </p>
+                <select id = 'favor'>
+                    <option value = '0' selected> Red</option>
+                    <option value = '1'> Blue</option>
+                </select>
+            </div>
+
+        <div class = 'btns'>
+            <button id = 'gerrify' class = 'red'>Gerrify</button>
+            <button id = 'clear' class = 'red'>Clear</button>
+        </div>
+      
+        
+    </div>
+
+    <div class = 'container'>
+        <canvas id = 'canvas'></canvas>
+
+        <div class = 'log-box'>
+            <h1 class = 'log-title'> Activity Log</h1>
+            <div id = 'log'>
+                <p class = 'logitem'>>>  ...</p>
+            </div>
+        </div>
+        
+        <div class = 'box-box'>
+            <h1 class = 'box-title'> Results </h1>
+            <div id = 'box'>
+                    <p class = 'result'>...</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+    
+
+  
+    
+</body>
+
+<script src = 'functions.js'></script>
+<script src = 'gerry.js'></script>
+<script src = 'canvas.js'></script>
+</html>
